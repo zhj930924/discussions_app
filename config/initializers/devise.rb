@@ -140,7 +140,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 8..128
+  config.password_length = 6..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -229,7 +229,7 @@ Devise.setup do |config|
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
   
-  config.secret_key = '14f988f65bf2512ea07bbc2ed0a3ab3be132cac721c6243246eafb72f3de3d77826997c88b022d5dd66557698880a29768534f46f5a9d7265c1cd3723fa0b716'
+  config.secret_key = '<%= ENV["DEVISE_SECRET_KEY"] %>'
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.

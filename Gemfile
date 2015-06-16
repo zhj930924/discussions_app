@@ -17,15 +17,15 @@ gem 'thin'
 gem 'private_pub'
 gem 'devise'
 
-# group :development do
+group :development do
 	gem 'mysql2'
-# end
+end
 
-# group :production do
-# 	gem 'pg'
-# 	gem 'rails_12factor'
-# 	gem 'puma'
-# end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+	gem 'puma'
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

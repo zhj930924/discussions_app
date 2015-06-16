@@ -1,16 +1,17 @@
 
 <div class="col-lg-3 col-md-10 col-sm-12 margin-top-md">
-    <div class="h3 margin-top-xs raleway uppercase contentTitle active"> Back </div>
+  
 </div>
 
 <div class="col-lg-8 col-md-11 col-sm-12 margin-top-md">
     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 paddingReset commentContainer"> 
-      <div class="commentWrapper disc-about">
+<!--       <div class="commentWrapper disc-about">
         <div class="media roboto">
-          <div class="media-body">
+          <div class="media-body text-center">
+            Demo Discussion
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="discBox col-lg-12 col-md-12 paddingReset">
      	<% if @chat %>
 	      	<% @chat.each do |chat| %>
@@ -26,6 +27,7 @@
       		<div class="form-group">
 	      		<label for="message_box"> Comment:</label>
 	      		<textarea class="form-control" value="" id="message_box" name="chat[message]" ></textarea>
+            <p class="help-block">(You can also press <kbd>ENTER</kbd> to comment)</p>
       		</div>
       		<button class="btn btn-sm btn-info">Submit</button>
       	<% end %>
@@ -42,7 +44,7 @@
     height: 500px;
     margin-bottom: 15px;
     overflow: auto;
-    background-color: #CE3;
+    background-color: #eee;
 }
 .message{
 	margin-bottom: 10px;
@@ -56,3 +58,15 @@
   padding-left: 0;
 }
 </style>
+<script>
+  $(document).ready(function(){
+    $('#message_box').on('keydown', function(e){
+      var key_pressed = e.which;
+      if(key_pressed === 13 ){
+        if($(this).val()!== ""){
+          $('.messageBox form button').trigger('click');
+        }
+      }
+    });
+  });
+</script>

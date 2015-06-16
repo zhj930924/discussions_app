@@ -49,9 +49,13 @@ test:
 #
 
 production:
-  adapter: postgresql
-  encoding: unicode
+  # adapter: postgresql
+  adapter: mysql2
+  encoding: utf8
   database: discussions_app_production
   pool: 5
-  username: discussion_app
-  password: <%= ENV['DISCUSSIONS_APP_DATABASE_PASSWORD'] %>
+  username: root
+  password: tcs123
+  socket: /var/run/mysqld/mysqld.sock
+
+  #<%= ENV['DISCUSSIONS_APP_DATABASE_PASSWORD'] %>

@@ -35,12 +35,14 @@
 </div>
 <%#= javascript_include_tag 'private_pub.js' %>
 <%#= javascript_include_tag 'chats.js' %>
+<%= subscribe_to "/chats/index" %>
 <style type="text/css">
 .discBox {
     border: 1px solid #666;
     height: 500px;
     margin-bottom: 15px;
     overflow: auto;
+    background-color: #CE3;
 }
 .message{
 	margin-bottom: 10px;

@@ -1,0 +1,2737 @@
+/* line 4, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+body {
+  background: #eee;
+}
+
+@keyframes fadein {
+  /* line 8, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+
+  /* line 12, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadein {
+  /* line 18, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+
+  /* line 22, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Utility Classes */
+/* line 28, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.roboto {
+  font-family: "Roboto",sans-serif;
+}
+
+/* line 31, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.raleway {
+  font-family: "Raleway",sans-serif;
+}
+
+/* line 34, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.paddingReset {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 38, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-bottom-md {
+  margin-bottom: 10px;
+}
+
+/* line 41, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-bottom-sm {
+  margin-bottom: 5px;
+}
+
+/* line 44, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-top-md {
+  margin-top: 25px;
+}
+
+/* line 47, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-top-lg {
+  margin-top: 40px;
+}
+
+/* line 50, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-top-sm {
+  margin-top: 10px;
+}
+
+/* line 53, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.white {
+  color: #fff;
+}
+
+/* line 56, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.border-sm-right {
+  border-right: 1px solid #ddd;
+}
+
+/* line 59, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.border-sm-left {
+  border-left: 1px solid #ddd;
+}
+
+/* line 62, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 65, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.text-large {
+  font-size: 1.8em;
+}
+
+/* line 68, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.border-top-dark {
+  border-top: 1px solid #aaa;
+}
+
+/* line 72, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.border-top-light {
+  border-top: 1px solid #ddd;
+}
+
+/* line 76, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.small-text {
+  font-size: 12px;
+}
+
+/* line 80, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-top-xs {
+  margin-top: 3px;
+}
+
+/* Utility Classes End */
+/* line 85, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.cover {
+  background-color: #49accc;
+  background-image: url("http://samluce.com/wp-content/uploads/2014/12/Most-Frequently-Challenged-Book-ftr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 20px 20px;
+}
+
+/* line 93, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.container-group-info {
+  height: 200px;
+  background: #fff;
+  padding: 15px;
+}
+
+/* line 99, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.group-name {
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding: 0 10px 10px 0;
+}
+
+/* line 105, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.group-info {
+  padding: 10px;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+/* line 110, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.cover .btnRounded {
+  border: 2px solid #FFF;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  color: #FFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-transition: .2s ease all;
+  -o-transition: .2s ease all;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+  margin-right: 10px;
+}
+
+/* line 124, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.cover .btnRounded:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* line 128, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btnTeal {
+  background: #41B7D8;
+  color: #fff;
+}
+
+/* line 133, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btnTeal:hover {
+  background: #42C8ED;
+  color: #fff;
+}
+
+/* line 138, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.info {
+  background: #fff;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 95%;
+}
+
+/* line 147, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.memberCount {
+  border-bottom: 1px solid #d7d7d7;
+  padding: 15px;
+  color: #666666;
+}
+
+/* line 153, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.memberCount div:first-child {
+  font-size: 28px;
+}
+
+/* line 157, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.memberCount div:last-child {
+  color: #666;
+  font-size: 14px;
+}
+
+/* line 164, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.announcement:nth-child(odd) {
+  padding: 20px;
+  background: #f3f3f3;
+}
+
+/* line 169, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.announcement:nth-child(even) {
+  padding: 20px;
+  background: #fff;
+}
+
+/* line 177, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.lightblueText {
+  color: #49ACCC;
+}
+
+/* line 181, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btnComments {
+  border: none;
+  font-size: 13px;
+}
+
+/* line 186, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btnComments a, .post-preview a {
+  text-decoration: none;
+  color: #4682B4;
+}
+
+/* line 191, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btnComments:hover {
+  background: none;
+}
+
+/* line 195, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btnSet {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+/* line 200, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.post-target {
+  margin-top: 8px;
+}
+
+/* line 204, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.post-target span {
+  background: none repeat scroll 0 0 #383838;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 5px;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+/* line 214, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.post-target span.mod {
+  background: #FF6E42;
+  color: #fff;
+}
+
+/* line 219, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.post-preview img {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* line 226, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.searchBar {
+  background: none repeat scroll 0 0 #2d6596;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 300px;
+  display: none;
+}
+
+/* line 235, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.searchBar input.form-control {
+  width: 200px;
+  float: left;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* line 241, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userPic {
+  display: inline-block;
+}
+
+/* line 245, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userPic img {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  height: 75px;
+  margin-bottom: 20px;
+}
+
+/* line 252, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mods .h4 {
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* line 258, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mods {
+  background: none repeat scroll 0 0 #FFF;
+  border-bottom: 5px solid #DDD;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+/* line 265, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userPicContainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 272, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.notice {
+  background: white;
+  padding: 5px 15px 15px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* line 279, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.noticeboard {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  width: 99%;
+  color: #333333;
+  text-align: center;
+}
+
+/* line 287, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.noticeboard:before {
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 14px;
+  width: 35%;
+}
+
+/* line 297, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.noticeboard:after {
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  content: "";
+  height: 6px;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 35%;
+}
+
+/* line 307, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.darkblue {
+  color: #3890AA;
+}
+
+/* line 310, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.filters {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/* line 314, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.slides {
+  height: 350px;
+  background: #e0e0e0;
+}
+
+/* line 319, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.notifs {
+  height: 350px;
+  background: #e9e9e9;
+}
+
+/* line 324, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentMain {
+  padding: 70px 20px 20px;
+  background: #eee;
+}
+
+/* line 329, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.block {
+  background: none repeat scroll 0 0 #789;
+  height: 120px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 336, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.paddingLReset {
+  padding-left: 0;
+}
+
+/* line 340, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.blockTitle {
+  background: none repeat scroll 0 0 #87CEEB;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* line 348, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.fyf .blockTitle {
+  background: none repeat scroll 0 0 #FFD700;
+}
+
+/* line 352, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.thread {
+  border-bottom: 1px solid #DDD;
+  padding: 15px;
+}
+
+/* line 357, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.channelName {
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding-bottom: 3px;
+  color: #333;
+}
+
+/* line 364, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.fCount {
+  padding-left: 5px;
+  border-left: 1px solid #666;
+  display: inline-block;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+/* Homepage */
+/* line 375, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mainContent {
+  background-attachment: fixed;
+  background-image: url("landingPattern1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  padding: 80px 15px 15px;
+}
+
+/* line 384, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.cir50 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+}
+
+/* line 390, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ann {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+  min-height: 300px;
+  padding: 15px;
+}
+
+/* line 395, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.annContainer p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* line 402, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.linkContain {
+  padding: 15px;
+}
+
+/* line 405, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.turquoise {
+  color: turquoise;
+}
+
+/* line 408, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 411, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.annContainer p:last-of-type, .smallCard:last-of-type {
+  border-bottom: none;
+}
+
+/* line 414, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mainbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 418, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sidebar {
+  padding-bottom: 10px;
+  z-index: 3;
+}
+
+/* line 422, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.thing:hover {
+  opacity: 0.9;
+}
+
+/* line 425, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.thing {
+  background: none repeat scroll 0 0 #333;
+  color: white;
+  height: 150px;
+  margin: 5px;
+  padding: 10px;
+  transition: all 0.4s ease 0s;
+  width: 95%;
+}
+
+/* line 434, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.thing > div {
+  bottom: 20px;
+  font-family: "roboto",sans-serif;
+  position: absolute;
+  padding-right: 5px;
+  line-height: 1.5;
+}
+
+/* line 441, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.eventCard {
+  padding: 12px 10px;
+  background: #FFEB3B;
+  border: 2px solid transparent;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+/* line 448, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.padding-top-sm {
+  padding-top: 5px;
+}
+
+/* line 451, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.padding-top-md {
+  padding-top: 10px;
+}
+
+/* line 454, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.margin-bottom-xs {
+  margin-bottom: 3px;
+}
+
+/* line 457, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.eventCard i.fa-angle-right {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+/* line 462, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.eventCard:hover {
+  border: 2px solid #333;
+}
+
+/* line 466, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.spotlightContainer {
+  padding: 20px;
+  background: #00BCD4;
+}
+
+/* line 470, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.spotlight {
+  min-height: 330px;
+  width: 95%;
+  margin: auto;
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 478, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.spotlight .picturePart {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 483, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.smCardContain .ccpPost {
+  box-shadow: 1px 1px 2px #dbdbdb;
+}
+
+/* line 486, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.smCardContain .ccpTitle, .smCardContain .showTitle {
+  color: #134fe6;
+}
+
+/* line 489, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.spotlight .contentTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none repeat scroll 0 0 #f44336;
+  color: white;
+  opacity: 0.9;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 500, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentPart {
+  padding: 10px;
+}
+
+/* line 503, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentPart > .title {
+  font-size: 18px;
+  font-family: 'roboto', sans-serif;
+}
+
+/* line 507, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sharePart {
+  background: none repeat scroll 0 0 #f7f7f7;
+  bottom: 0;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+}
+
+/* line 515, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.cfContainer {
+  background: #f5f5f5;
+  padding: 20px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.26);
+}
+
+/* line 520, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.smallCard {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  min-height: 140px;
+  padding: 15px;
+}
+
+/* line 526, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.smallCard .title {
+  color: #41B7D8;
+  font-size: 16px;
+}
+
+/* line 530, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.shareIcons i {
+  font-size: 14px;
+}
+
+/* line 533, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.shareIcons {
+  color: #00BCD4;
+  font-size: 14px;
+}
+
+/* line 537, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.postits {
+  color: black;
+  font-size: 16px;
+}
+
+/* line 541, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.postits textarea {
+  background: none repeat scroll 0 0 skyblue;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 200px;
+  margin: 10px auto auto;
+  padding: 10px;
+  color: black;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* line 553, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.postits textarea::-moz-placeholder {
+  color: #333;
+}
+
+/* line 556, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.postits textarea:focus {
+  border: 1px solid #333;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* line 560, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.smallCard .btnFollow {
+  font-size: 10px;
+}
+
+/* line 563, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.overlay {
+  background: none repeat scroll 0 0 black;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 572, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.owl-carousel {
+  z-index: 3;
+}
+
+/* line 575, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.owl-theme .owl-controls .owl-page span {
+  background: #333;
+}
+
+/* line 578, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.imageGallery .owl-theme .owl-controls .owl-page span {
+  background: #333;
+}
+
+/* line 581, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.pollContainer {
+  padding: 15px;
+  background: white;
+  border-bottom: 5px solid #ddd;
+  margin-top: 15px;
+}
+
+/* line 587, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.pollOption {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+/* line 592, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBand {
+  border-bottom: 1px solid slategray;
+  padding: 15px;
+}
+
+/* line 596, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.pollOption label {
+  font-weight: normal;
+}
+
+/* line 599, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.banner {
+  width: 100%;
+}
+
+/* line 602, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccFooter {
+  z-index: 5;
+}
+
+/* line 605, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.p1 {
+  border-top: 5px solid #F44336;
+}
+
+/* line 608, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.p2 {
+  border-top: 5px solid #3F51B5;
+}
+
+/* line 611, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.p3 {
+  border-top: 5px solid #4CAF50;
+}
+
+/* line 614, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.p1, .p2, .p3 {
+  padding: 10px;
+  padding-left: 30px;
+}
+
+/* line 618, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.hC {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ddd;
+  margin: auto;
+  padding-top: 18px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+/* line 628, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#connect:hover, #collaborate:hover, #play:hover, #ccpHome:hover {
+  opacity: 0.85;
+}
+
+/* line 631, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#connect {
+  background: #DF271F;
+  color: white;
+}
+
+/* line 635, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#collaborate {
+  background: #EEAC10;
+  color: white;
+}
+
+/* line 639, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#play {
+  background: #74A91B;
+  color: white;
+}
+
+/* line 643, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#ccpHome {
+  background: none repeat scroll 0 0 #39a0b3;
+}
+
+/* line 646, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccp {
+  padding: 80px 15px 15px;
+  background: #333;
+  border-left: 10px solid #73A81A;
+  color: white;
+  z-index: 10;
+  border-right: 10px solid #73A81A;
+}
+
+/* line 654, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.infoWrap {
+  background: #4C4C4C;
+  padding: 15px;
+  color: white;
+  margin-top: 15px;
+}
+
+/* line 660, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.infoWrap .announcement {
+  color: #333;
+}
+
+/* line 663, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.aboutLabel {
+  background: none repeat scroll 0 0 #333;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 1px 3px #888;
+  color: white;
+  left: -15px;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 30%;
+  transform: rotate(270deg);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* line 677, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.aboutLabel:hover {
+  background: dodgerblue;
+}
+
+/* line 680, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.annBand {
+  background: url("jobshowpattern.svg") repeat fixed 0 0 rgba(0, 0, 0, 0);
+  padding-bottom: 25px;
+  color: black;
+}
+
+/* line 685, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ftContainer {
+  /*background-image: url(http://crispylogs.com/wp-content/uploads/2014/05/bullet-train.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+  background: #4c4c4c;
+  padding-bottom: 25px;
+  color: white;
+  padding-top: 15px;
+}
+
+/* line 695, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.featured > a {
+  color: turquoise;
+}
+
+/* line 698, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.featured {
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: black;
+  border-bottom: 2px solid turquoise;
+}
+
+/* line 705, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.annText {
+  margin-bottom: 10px;
+}
+
+/* line 708, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mobileBar {
+  background: none repeat scroll 0 0 #333333;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  z-index: 3;
+}
+
+/* line 715, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mobileNavElement {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* line 720, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mobileNavElement i {
+  line-height: 2.2;
+}
+
+@media only screen and (min-width: 360px) and (orientation: portrait) {
+  /* line 724, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .eventInfo, .userBand {
+    text-align: center;
+  }
+
+  /* line 727, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .cfContainer {
+    padding: 0;
+  }
+
+  /* line 730, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .mainContent {
+    padding: 10px;
+  }
+
+  /* line 733, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .fa-flag {
+    display: none;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /* line 740, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  /* line 748, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  /* line 756, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+
+  /* line 759, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .info, .mods {
+    width: 100%;
+  }
+
+  /* line 762, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .cfContainer, nav.ccNav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 766, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .userBand {
+    padding-top: 60px;
+  }
+
+  /* line 769, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .spotlight .picturePart {
+    height: 150px;
+  }
+
+  /* line 772, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .contentPart > .title {
+    font-size: 15px;
+  }
+
+  /* line 775, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .spotlight {
+    min-height: 290px;
+  }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  /* line 783, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+
+  /* line 786, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .contentPart > .title {
+    font-size: 15px;
+  }
+
+  /* line 789, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .spotlight {
+    min-height: 290px;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  /* line 797, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+}
+/* iPad 3 (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+  /* line 805, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+}
+/* iPad 3 (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+  /* line 813, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-collapse.navbar-mobile {
+    display: none !important;
+  }
+}
+/* line 817, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.leftNav {
+  height: 100%;
+  position: fixed;
+  width: 65px;
+  z-index: 5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* line 824, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.leftNav.connect {
+  background: #C62922;
+}
+
+/* line 827, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.leftNav.collaborate {
+  background: none repeat scroll 0 0 #eeac10;
+}
+
+/* line 830, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.leftNav.play {
+  background: #74A91B;
+}
+
+/* line 833, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccpContent {
+  padding-left: 65px;
+  padding-right: 0;
+}
+
+/* line 837, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.moderator {
+  background: #ddd;
+  min-height: 150px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #999;
+}
+
+/* line 846, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.moderator > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 851, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navElement {
+  padding-bottom: 7px;
+  padding-left: 13px;
+  padding-top: 7px;
+}
+
+/* line 856, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navElement:first-of-type {
+  margin-top: 210px;
+}
+
+/* line 859, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navElement.active {
+  background: #EEEEEE;
+}
+
+/* line 862, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navElement:hover {
+  background: white;
+}
+
+/* line 865, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.collCard {
+  background: #333;
+  color: white;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* line 872, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+img.mini {
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+/* line 879, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navElement > div {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 883, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccpPost {
+  background: none repeat scroll 0 0 white;
+  box-shadow: 0 1px 5px #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  animation-duration: 0.75s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  word-wrap: break-word;
+  padding-right: 15px;
+}
+
+/* line 895, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccpTitle, .showTitle {
+  color: teal;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.25px;
+}
+
+/* line 901, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.showTitle {
+  font-size: 24px;
+}
+
+/* line 904, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userMeta {
+  padding-top: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-family: 'roboto', sans-serif;
+}
+
+/* line 910, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+img.mini {
+  width: 22px;
+  height: auto;
+  margin-top: -5px;
+  margin-right: 3px;
+}
+
+/* line 916, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentTitle {
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+/* line 920, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentTitle.active {
+  color: teal;
+  border-bottom: 1px solid;
+}
+
+/* line 924, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentTitle:hover {
+  color: teal;
+}
+
+/* line 927, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.status {
+  background: none repeat scroll 0 0 #f44336;
+  border-bottom: 2px solid darkred;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 8px;
+  padding: 2px 6px;
+}
+
+/* line 936, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentShow, .contentShow p, .contentShow li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #414142;
+}
+
+/* line 942, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentShow h3, .contentShow h2, .contentShow h1, .contentShow h4, .contentShow h6, .contentShow h5 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* line 948, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentShow blockquote {
+  background: #f2f2f2;
+  border-left: 5px solid dodgerblue;
+}
+
+/* line 952, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentShow li h1, .contentShow li h2, .contentShow li h3, .contentShow li h4, .contentShow li h5, .contentShow li h6 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* line 956, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.contentShow img {
+  margin-bottom: 10px;
+  width: 100%;
+  max-height: 450px;
+}
+
+/* line 961, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.media-object {
+  height: 100px;
+  width: 100px;
+}
+
+/* line 965, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.media {
+  background: white;
+  border: none;
+  box-shadow: 0 1px 3px #ddd;
+  padding: 20px;
+}
+
+/* line 971, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.toolkit {
+  background: none repeat scroll 0 0 white;
+  border-top: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 979, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.media-body .media {
+  border-top: 1px solid #ddd;
+  box-shadow: none;
+}
+
+/* line 983, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.media.indent, .toolkit.indent {
+  margin-left: 50px;
+}
+
+/* line 986, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.replyThread .media {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+/* line 990, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.replyThread .media-object {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 5px;
+}
+
+/* line 995, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#toTop {
+  position: fixed;
+  bottom: 8%;
+  display: none;
+  cursor: pointer;
+}
+
+/* line 1000, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.feted {
+  background: none repeat scroll 0 0 gold;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 1px 3px #f2f2f2;
+  font-size: 10px;
+  padding: 5px 10px 5px 5px;
+  position: absolute;
+  right: -8px;
+  top: 8px;
+  text-transform: uppercase;
+}
+
+/* line 1013, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.feted:before {
+  border-right: 8px solid transparent;
+  border-top: 8px solid #635100;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  width: 0;
+}
+
+/* line 1023, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.arImage {
+  width: 100%;
+  max-height: 200px;
+  margin-top: 15px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 1031, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .ccpContent, .navbar-header-mobile .navbar-brand {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 1035, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .media.indent, .toolkit.indent {
+    margin-left: 15px;
+  }
+
+  /* line 1038, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .media-left, .noticeboard:before, .noticeboard:after, .arImage, .post-target span, .userPic:nth-of-type(n+7) {
+    display: none;
+  }
+
+  /* line 1041, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .notice {
+    margin-top: 30px;
+  }
+
+  /* line 1044, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .cover {
+    padding: 20px 5px;
+  }
+
+  /* line 1047, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .info, .mods {
+    width: 100%;
+  }
+
+  /* line 1050, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .navbar-header-mobile .navbar-toggle {
+    background: transparent !important;
+    float: left;
+    margin-right: 0;
+  }
+
+  /* line 1055, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .contentShow p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* line 1059, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .feted:before {
+    border-top: 0px solid transparent;
+  }
+
+  /* line 1062, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .feted {
+    right: 0;
+  }
+
+  /* line 1065, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+  .polls label {
+    font-size: 16px;
+  }
+}
+/* line 1069, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.meterContainer {
+  position: fixed;
+  top: 35%;
+  right: -160px;
+  z-index: 3;
+  box-shadow: 0 1px 3px #666;
+}
+
+/* line 1076, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.topPart, .bottomPart {
+  background: none repeat scroll 0 0 #5793d0;
+  font-size: 18px;
+  min-height: 150px;
+  padding: 25px 10px 10px;
+  text-align: center;
+  width: 170px;
+}
+
+/* line 1084, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.bottomPart {
+  background: #2A2C2C;
+}
+
+/* line 1087, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.meterTrigger {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #5793d0;
+  background-image: url("meterTrigger.png");
+  background-origin: padding-box;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  height: 75px;
+  left: -70px;
+  position: absolute;
+  top: 0;
+  width: 70px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* line 1105, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.meterOut {
+  right: 0;
+}
+
+/* line 1108, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.candidate {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 125px;
+}
+
+/* line 1114, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.actionItem {
+  background: none repeat scroll 0 0 #5793d0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 2.3;
+  cursor: pointer;
+}
+
+/* line 1123, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.actionItem:hover {
+  background: #5EA6ED;
+}
+
+/* line 1127, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.guide {
+  background: url("tbm.png") no-repeat scroll 0 0/cover rgba(0, 0, 0, 0);
+  height: 80px;
+  left: -100px;
+  position: absolute;
+  top: 80px;
+  width: 90px;
+}
+
+/* Final and New Toolbar Code */
+/* line 1136, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccNav {
+  margin-bottom: 0;
+  background: #3C86C7;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid #2D6596;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+/* line 1152, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-brand {
+  padding: 20px 20px 15px;
+}
+
+/* line 1155, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: #2D6596;
+  color: white;
+}
+
+/* line 1159, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+/* line 1162, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-right > li > a > i {
+  font-size: 18px;
+}
+
+/* line 1165, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+img.thumbPic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* line 1170, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-default .navbar-nav > li.locale > a:hover, .navbar-default .navbar-nav > li.locale > a:focus {
+  color: white;
+}
+
+/* line 1173, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background: #3571a5;
+  color: white;
+}
+
+/* line 1177, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-nav > li > a {
+  line-height: 1.6;
+}
+
+/* line 1180, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.drop {
+  background: none repeat scroll 0 0 white;
+  border-top: 4px solid;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  min-width: 140px;
+  box-shadow: 0 1px 3px #666;
+  display: none;
+}
+
+/* line 1190, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.drop > div {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* line 1195, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.drop > div:hover {
+  background: #f2f2f2;
+}
+
+/* line 1198, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.locale {
+  cursor: pointer;
+}
+
+/* line 1201, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.locale:focus {
+  background: #2D6596;
+}
+
+/* Play Space Quizzes */
+/* line 1205, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.unique:before {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 42%;
+}
+
+/* line 1215, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.unique:after {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  content: "";
+  height: 5px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 42%;
+}
+
+/* line 1225, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.unique {
+  border-radius: 0;
+  border-bottom: 2px solid darkgreen;
+}
+
+/* line 1229, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.others {
+  background: none repeat scroll 0 0 #2d6596;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24);
+  color: white;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  z-index: 20;
+  display: none;
+}
+
+/* line 1240, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.others > div {
+  border-right: 1px solid #ddd;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 1246, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.others > div a {
+  color: white;
+}
+
+/* line 1249, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.others > div:last-of-type {
+  border-right: none;
+}
+
+/* line 1252, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.nxtDiv {
+  position: fixed;
+  bottom: 10px;
+  width: 160px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-right: 0;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 4;
+  display: none;
+}
+
+/* line 1266, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.non-isu-show .ccpPost {
+  padding: 20px;
+}
+
+/* Overlay CSS */
+/* line 1270, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.scrim {
+  position: relative;
+}
+
+/* line 1274, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.scrim:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: black;
+  opacity: 0.7;
+}
+
+/* line 1285, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.cover * {
+  position: relative;
+}
+
+/* line 1288, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.stance {
+  border: 2px solid #414142;
+  margin: auto auto auto 3px;
+  min-height: 200px;
+  padding: 15px;
+  width: 98%;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+/* line 1298, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btn-black {
+  background: none repeat scroll 0 0 #404249;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 1303, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.btn-black:hover {
+  background: #4f5158;
+  color: white;
+}
+
+/* Debates */
+/* line 1308, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.debate {
+  border-bottom: 4px double #ddd;
+  border-top: 4px double #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+/* line 1314, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.stance > p {
+  border-bottom: 2px dotted;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  height: 120px;
+}
+
+/* line 1320, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.progress-bar-custom {
+  background: #414142;
+}
+
+/* Play Videos with Notes */
+/* line 1326, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.videoNotes {
+  border-radius: 0px;
+  box-shadow: none;
+  border-right: 2px solid #cccccc;
+  border-width: 0px 2px 2px;
+  border-style: none solid solid;
+  border-color: -moz-use-text-color #cccccc #cccccc;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  padding: 10px;
+}
+
+/* line 1340, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.video {
+  background: #333;
+  height: 350px;
+}
+
+/* line 1344, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.video > i.fa-play {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+/* line 1350, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-header-mobile {
+  background: #3C86C7;
+  border-bottom: 3px solid #2D6596;
+}
+
+/* line 1354, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-header-mobile .navbar-toggle {
+  background: #2D6596;
+}
+
+/* line 1357, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-header-mobile .icon-bar {
+  background: white;
+}
+
+/* line 1360, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-mobile {
+  background: none repeat scroll 0 0 #3c86c7;
+}
+
+/* line 1363, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-mobile > ul li {
+  border-bottom: 2px solid #2d6596;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+}
+
+/* line 1370, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-mobile ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 1374, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-mobile li a {
+  color: white;
+}
+
+/* line 1377, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.navbar-mobile .nav > li > a:hover, .navbar-mobile .nav > li > a:focus {
+  color: white;
+  background: #2d6596;
+}
+
+/* Polls */
+/* line 1383, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.polls label {
+  display: block;
+  font-weight: normal;
+  padding: 15px;
+  background: #404249;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+/* line 1392, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.polls {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 4px double #ddd;
+  border-bottom: 4px double #ddd;
+  font-size: 20px;
+}
+
+/* line 1399, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.styledRadio {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+/* line 1404, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.styledCheckbox {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+/* line 1409, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.filler {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* line 1417, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.attribute, .atTrigger {
+  background: none repeat scroll 0 0 #333;
+  border-radius: 50%;
+  bottom: 15px;
+  color: white;
+  height: 50px;
+  left: 10px;
+  line-height: 2.6;
+  text-align: center;
+  position: fixed;
+  width: 50px;
+  z-index: 100;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* line 1432, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.attribute {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: transparent;
+}
+
+/* line 1433, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.atTrigger {
+  transition: 0.1s ease-in-out all;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  background: #DF271F;
+  font-size: 20px;
+}
+
+/* line 1439, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.attribute > div {
+  background: none repeat scroll 0 0 black;
+  display: inline;
+  left: 53px;
+  padding: 4px 7px;
+  position: relative;
+  top: 6px;
+  font-size: 12px;
+}
+
+/* line 1448, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.curtain {
+  background: none repeat scroll 0 0 white;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 1458, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.fa-heart {
+  transition: 0.2s ease all;
+}
+
+/* line 1461, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.hearted {
+  color: #EF3F32;
+  transform: scale(1.22);
+}
+
+/* line 1463, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.tasker {
+  background: none repeat scroll 0 0 #5793d0;
+  color: white;
+  font-size: 18px;
+  height: 100%;
+  left: 0;
+  padding: 20px 15px 15px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+}
+
+/* line 1477, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.tasker > img {
+  width: 100px;
+}
+
+/* line 1481, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.taskerList {
+  height: 330px;
+  overflow: scroll;
+}
+
+/* line 1485, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.taskerList > div {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 1489, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.task-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* line 1495, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.mobileMeterTrigger {
+  background: none repeat scroll 0 0 #5793d0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: fixed;
+  right: -15px;
+  text-align: center;
+  top: 250px;
+  transform: rotate(270deg);
+  z-index: 200;
+}
+
+/* line 1509, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.ccNav .navbar-nav > li {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1512, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.notifList {
+  background: white;
+  border: 1px solid #bbb;
+  position: absolute;
+  right: 0;
+  top: 52px;
+  width: 300px;
+  display: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #666;
+}
+
+/* line 1523, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.notifList > div {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 10px;
+}
+
+/* line 1527, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userProfilePic {
+  margin-left: 15px;
+}
+
+/* line 1530, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.channel-display {
+  padding: 50px 20px 20px;
+  text-align: center;
+  min-height: 210px;
+  margin-bottom: 0;
+  cursor: pointer;
+  background: #414142;
+  position: relative;
+  transition: 0.5s ease all;
+}
+
+/* line 1540, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+div.channel-display:hover {
+  background: #333;
+}
+
+/* line 1544, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+div.channel-display:hover .isu-name {
+  color: springgreen;
+  border: 1px solid springgreen;
+}
+
+/* line 1548, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.checked {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: springgreen;
+}
+
+/* line 1555, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.isu-name {
+  border: 1px solid white;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+/* line 1560, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msgCard {
+  background: none repeat scroll 0 0 white;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+
+/* line 1567, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msgCard:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* line 1570, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.microImg {
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+/* line 1576, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.microImg > img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+/* line 1581, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msgCard.unread {
+  font-weight: bold;
+  color: black;
+}
+
+/* line 1585, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msgText {
+  border-top: 1px solid #ddd;
+  display: block;
+  font-weight: normal;
+  margin-top: 50px;
+  display: none;
+  padding-top: 10px;
+}
+
+/* line 1593, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msg-bg {
+  background-image: url("msg.png");
+  background-size: 300px;
+  padding: 80px 20px 20px;
+  background-attachment: fixed;
+}
+
+/* line 1599, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msg-bg * {
+  position: relative;
+}
+
+/* line 1602, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msg-bg.scrim:before {
+  opacity: 0.4;
+}
+
+/* line 1605, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.msgCard a {
+  color: orangered;
+}
+
+/* Contest Page */
+/* line 1611, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.choose-role {
+  background: none repeat scroll 0 0 skyblue;
+  display: inline-block;
+  height: 350px;
+  margin-bottom: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding-top: 140px;
+  width: 300px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all .2s ease-in-out;
+  position: relative;
+}
+
+/* line 1625, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.choose-role:hover {
+  background: #17B2EA;
+}
+
+/* line 1628, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.choose-role.active {
+  border: 2px solid black;
+  background: #17B2EA;
+}
+
+/* line 1632, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.big-next {
+  width: 200px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+/* line 1635, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.probar:after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: transparent -moz-use-text-color transparent #ddd;
+  border-image: none;
+  border-style: solid none solid solid;
+  border-width: 25px 0 25px 25px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -24px;
+  width: 0;
+  z-index: 10;
+}
+
+/* line 1651, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.probar.active:after {
+  border-color: transparent -moz-use-text-color transparent #8bc34a;
+}
+
+/* line 1654, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.probar.active {
+  background: none repeat scroll 0 0 #8bc34a;
+  color: black;
+}
+
+/* line 1658, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.probar {
+  background: none repeat scroll 0 0 #ddd;
+  display: inline-block;
+  height: 50px;
+  margin-right: -5px;
+  position: relative;
+  width: 200px;
+  color: #666;
+}
+
+/* line 1667, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.probar > div {
+  display: inline-block;
+  font-family: "roboto",sans-serif;
+  padding-top: 14px;
+}
+
+/* line 1672, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.team-details {
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  display: none;
+}
+
+/* line 1679, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.choose-role textarea {
+  border: 2px solid;
+  height: 47px;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+}
+
+/* line 1686, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.choose-role.active .team-details {
+  display: block;
+}
+
+/* line 1689, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.step-two input {
+  border: 2px solid #ccc;
+  height: 60px;
+  width: 400px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'roboto', sans-serif;
+  padding: 10px;
+}
+
+/* line 1698, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.step-two input:focus {
+  border: 2px solid black;
+}
+
+/* line 1701, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.createBox {
+  background: white;
+  min-height: 400px;
+  padding: 20px;
+  box-shadow: 0 1px 3px #d2d2d2;
+}
+
+/* line 1707, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.disc-about {
+  background: #ddd;
+  color: #333;
+  font-family: 'roboto', sans-serif;
+  margin-bottom: 15px;
+}
+
+/* line 1713, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.disc-about .media {
+  background: inherit;
+  box-shadow: none;
+}
+
+/* line 1717, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.disc-about .media-body img {
+  border: 1px solid #a0a0a0;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  max-height: 300px;
+  overflow: hidden;
+  padding: 5px;
+  cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  max-width: 50%;
+}
+
+/* line 1730, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.isuInfo {
+  background: none repeat scroll 0 0 turquoise;
+  height: 700px;
+}
+
+/* line 1734, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#badges .modal-header, #badges .modal-footer {
+  border-bottom: none;
+  border-top: none;
+}
+
+/* line 1738, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#badges .modal-content {
+  border-radius: 0;
+}
+
+/* line 1741, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#badges .modal-body {
+  height: 500px;
+  overflow: auto;
+}
+
+/* line 1745, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.bc {
+  background: none repeat scroll 0 0 #f2f2f2;
+  height: 220px;
+  padding: 20px;
+  box-shadow: 0 1px 3px #a0a0a0;
+  margin-bottom: 10px;
+}
+
+/* line 1752, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.bc i {
+  color: teal;
+  font-size: 20px;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+/* line 1759, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble {
+  background: none repeat scroll 0 0 white;
+  border-radius: 5px;
+  font-family: "roboto",sans-serif;
+  margin-top: 10px;
+  padding: 5px 15px 0;
+  position: relative;
+}
+
+/* line 1767, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userPost .media-object {
+  width: 75px;
+  height: 75px;
+}
+
+/* line 1771, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble > i.fa-caret-left {
+  position: absolute;
+  left: -15px;
+  top: 15px;
+}
+
+/* line 1776, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble > i.fa-caret-right {
+  position: absolute;
+  right: -15px;
+  top: 15px;
+}
+
+/* line 1781, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble .toolkit {
+  padding-left: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 1786, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.media-object-left {
+  position: absolute;
+  left: -120px;
+}
+
+/* line 1790, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.media-object-right {
+  position: absolute;
+  right: -120px;
+}
+
+/* line 1794, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble.reply {
+  margin-left: 50px;
+  background: none repeat scroll 0 0 paleturquoise;
+}
+
+/* line 1798, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble.reply .toolkit {
+  background: none repeat scroll 0 0 paleturquoise;
+  border-top: 1px solid #87adad;
+}
+
+/* line 1802, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble blockquote {
+  background: none repeat scroll 0 0 #F2F2F2;
+  border-left: 5px solid dodgerblue;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+/* line 1810, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.userBubble.reply > i {
+  color: paleturquoise;
+}
+
+/* line 1814, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.tsk {
+  border-left: 2px solid #ddd;
+  font-family: "roboto",sans-serif;
+  margin: auto auto auto 30px;
+  padding-left: 30px;
+  position: relative;
+  width: 90%;
+}
+
+/* line 1822, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.blip-top {
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 40px;
+  left: -20px;
+  line-height: 2.9;
+  position: absolute;
+  text-align: center;
+  top: 32px;
+  width: 40px;
+}
+
+/* line 1833, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.blip-top.completed {
+  background: none repeat scroll 0 0 #5cb85c;
+}
+
+/* line 1836, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.task-content {
+  background: none repeat scroll 0 0 #f2f2f2;
+  border-bottom: 15px solid white;
+  border-top: 10px solid white;
+  padding: 15px;
+  position: relative;
+}
+
+/* line 1843, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.task-content i.fa-caret-left:before {
+  color: #f2f2f2;
+  left: -24px;
+  position: absolute;
+}
+
+/* line 1848, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.level-name {
+  background: none repeat scroll 0 0 #5793d0;
+  border-bottom: 2px solid #355a7f;
+  color: white;
+  padding: 10px;
+}
+
+/* line 1854, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.tsk .progress {
+  background-color: #F2F2F2;
+  border: 1px solid #5CB85C;
+  height: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* line 1863, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.tsk .progress-bar {
+  color: black;
+}
+
+/* line 1866, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#tasks .modal-body {
+  height: 550px;
+  overflow: auto;
+}
+
+/* line 1870, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#leaderboard .modal-body {
+  height: 450px;
+  overflow: auto;
+}
+
+/* line 1874, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.levelWrapper.complete div.tsk, .levelWrapper.complete div.margin-bottom-md {
+  display: none;
+}
+
+/* line 1877, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.levelWrapper.complete {
+  margin-bottom: 10px;
+}
+
+/* line 1880, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.levelWrapper.complete .level-name {
+  background: none repeat scroll 0 0 #5cb85c;
+  border-bottom: 2px solid #61910f;
+}
+
+/* line 1884, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.createTab {
+  background: none repeat scroll 0 0 white;
+  bottom: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+  left: 80px;
+  position: absolute;
+  width: 200px;
+  z-index: 100;
+  display: none;
+}
+
+/* line 1894, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.createTab > a {
+  font-family: "roboto",sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 1903, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.createTab img {
+  margin-right: 10px;
+  width: 25px;
+}
+
+/* line 1907, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.createTab > a:hover {
+  background: none repeat scroll 0 0 #f2f2f2;
+}
+
+/* line 1910, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.createButton {
+  background-image: url("create.png");
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  bottom: 10px;
+  left: 13px;
+}
+
+/* line 1913, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+div.lb-data .lb-details {
+  font-family: "roboto",sans-serif;
+  line-height: 1.1em;
+  text-align: center;
+  float: none;
+  width: 100%;
+}
+
+/* line 1920, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.lb-data span.lb-caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1em;
+  position: relative;
+  top: 10px;
+}
+
+/* line 1927, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#leaderboard td img {
+  width: 50px;
+}
+
+/* line 1930, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#leaderboard thead tr th {
+  padding: 15px !important;
+}
+
+/* line 1933, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#leaderboard .me {
+  background: tomato;
+  color: white;
+}
+
+/* line 1937, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+#leaderboard thead {
+  background: none repeat scroll 0 0 #333;
+  border-bottom: 3px solid black;
+  color: white;
+}
+
+/* line 1943, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.img-mini {
+  width: 25px;
+}
+
+/* line 1946, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.filters .divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 1952, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* line 1958, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-podcast {
+  width: 40px;
+  height: 40px;
+  background-position: -3px -3px;
+}
+
+/* line 1964, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-blogs {
+  width: 40px;
+  height: 40px;
+  background-position: -49px -3px;
+}
+
+/* line 1970, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-create {
+  width: 40px;
+  height: 40px;
+  background-position: -95px -3px;
+}
+
+/* line 1976, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-debates {
+  width: 40px;
+  height: 40px;
+  background-position: -141px -3px;
+}
+
+/* line 1982, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-default {
+  width: 40px;
+  height: 40px;
+  background-position: -3px -49px;
+}
+
+/* line 1988, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-disc {
+  width: 40px;
+  height: 40px;
+  background-position: -49px -49px;
+}
+
+/* line 1994, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-ideas {
+  width: 40px;
+  height: 40px;
+  background-position: -95px -49px;
+}
+
+/* line 2000, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-ja {
+  width: 40px;
+  height: 40px;
+  background-position: -141px -49px;
+}
+
+/* line 2006, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-meterTrigger {
+  width: 40px;
+  height: 40px;
+  background-position: -3px -95px;
+}
+
+/* line 2012, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-mod {
+  width: 40px;
+  height: 40px;
+  background-position: -49px -95px;
+}
+
+/* line 2018, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-mooc {
+  width: 40px;
+  height: 40px;
+  background-position: -95px -95px;
+}
+
+/* line 2024, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-news {
+  width: 40px;
+  height: 40px;
+  background-position: -141px -95px;
+}
+
+/* line 2030, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-polls {
+  width: 40px;
+  height: 40px;
+  background-position: -3px -141px;
+}
+
+/* line 2036, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-quiz {
+  width: 40px;
+  height: 40px;
+  background-position: -49px -141px;
+}
+
+/* line 2042, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-va {
+  width: 40px;
+  height: 40px;
+  background-position: -95px -141px;
+}
+
+/* line 2048, /home/sahil/Documents/practice/discussions_app/app/assets/stylesheets/chats.css.scss */
+.sprite-videos {
+  width: 40px;
+  height: 40px;
+  background-position: -141px -141px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

@@ -20,15 +20,12 @@ class ChatsController < ApplicationController
       @chat.user_id = current_user.id
       @chat.channel_id = 1
       @chat.save
-
-      PrivatePub.publish_to("/chats/index", "alert('#{@chat.message}');")
-
+      PrivatePub.publish_to("/chats/index", "#{@chat.message}")
       @msg = 1
     end
-
-    respond_to do |format|
-      format.js 
-    end
+    # respond_to do |format|
+    #   format.js 
+    # end
   end
 
   def update

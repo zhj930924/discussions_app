@@ -8,7 +8,7 @@ test:
   secret_token: "bfbbca1a5762683f27fe17186415f02171ffc65c7deae8e7c20e084f219a32cf"
 
 production:
-  server: "https://discussionsapp.herokuapp.com/faye/faye"
+  server: "https://discussion-server.herokuapp.com/faye/faye"
   secret_token: <%= ENV['PRIVATE_PUB_SECRET_TOKEN']%>
   signature_expiration: 3600
 

@@ -10,5 +10,5 @@ test:
 production:
   server: "https://discussionsapp.herokuapp.com/faye/faye"
   secret_token: <%= ENV['PRIVATE_PUB_SECRET_TOKEN']%>
-  signature_expiration: 3600 # one hour
+  signature_expiration: 3600
 

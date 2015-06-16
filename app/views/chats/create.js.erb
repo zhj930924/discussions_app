@@ -1,0 +1,7 @@
+
+<% if @msg == 1 %>
+	<% publish_to "/chats/index" do %>
+		$('.discBox').removeClass('new');
+		$('.discBox').append("<%=escape_javascript(render :partial => '/chats/user_message', :locals=>{:chat => @chat}) %>").find('.userPost:last').addClass('new');
+	<% end %>
+<% end %>

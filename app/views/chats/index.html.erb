@@ -1,0 +1,56 @@
+
+<div class="col-lg-3 col-md-10 col-sm-12 margin-top-md">
+    <div class="h3 margin-top-xs raleway uppercase contentTitle active"> Back </div>
+</div>
+
+<div class="col-lg-8 col-md-11 col-sm-12 margin-top-md">
+    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 paddingReset commentContainer"> 
+      <div class="commentWrapper disc-about">
+        <div class="media roboto">
+          <div class="media-body">
+          </div>
+        </div>
+      </div>
+      <div class="discBox col-lg-12 col-md-12 paddingReset">
+     	<% if @chat %>
+	      	<% @chat.each do |chat| %>
+	      		<%= render partial: 'user_message', locals: {:chat => chat } %>
+	      	<% end %>
+      	<% end %> 	
+      </div>
+
+
+      <div class="messageBox col-lg-12 col-md-12 paddingReset">
+      	<%= form_tag "/chats",:method=> 'post', remote: true do %>
+      		<%= hidden_field_tag 'login',current_user.email %>
+      		<div class="form-group">
+	      		<label for="message_box"> Comment:</label>
+	      		<textarea class="form-control" value="" id="message_box" name="chat[message]" ></textarea>
+      		</div>
+      		<button class="btn btn-sm btn-info">Submit</button>
+      	<% end %>
+      </div>
+
+    </div>
+</div>
+<%#= javascript_include_tag 'private_pub.js' %>
+<%#= javascript_include_tag 'chats.js' %>
+<style type="text/css">
+.discBox {
+    border: 1px solid #666;
+    height: 500px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.message{
+	margin-bottom: 10px;
+}
+.new > div{
+	border-top: 1px solid dodgerblue;
+    margin-top: 14px;
+}
+.paddingReset{
+  padding-right: 0;
+  padding-left: 0;
+}
+</style>

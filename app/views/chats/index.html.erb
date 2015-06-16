@@ -12,7 +12,7 @@
           </div>
         </div>
       </div> -->
-      <div class="discBox col-lg-12 col-md-12 paddingReset">
+      <div class="discBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
      	<% if @chat %>
 	      	<% @chat.each do |chat| %>
 	      		<%= render partial: 'user_message', locals: {:chat => chat } %>
@@ -21,7 +21,7 @@
       </div>
 
 
-      <div class="messageBox col-lg-12 col-md-12 paddingReset">
+      <div class="messageBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
       	<%= form_tag "/chats",:method=> 'post', remote: true do %>
       		<%= hidden_field_tag 'login',current_user.email %>
       		<div class="form-group">
@@ -41,8 +41,8 @@
 <style type="text/css">
 .discBox {
     border: 1px solid #666;
-    height: 500px;
-    margin-bottom: 15px;
+    height: 400px;
+    margin-bottom: 10px;
     overflow: auto;
     background-color: #eee;
 }
@@ -56,6 +56,11 @@
 .paddingReset{
   padding-right: 0;
   padding-left: 0;
+}
+.messageBox{
+background: rgba(255,255,255,0.7);
+padding: 4px 11px;
+border-radius: 3px;
 }
 </style>
 <script>

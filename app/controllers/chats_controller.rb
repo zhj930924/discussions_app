@@ -1,6 +1,6 @@
 class ChatsController < ApplicationController
 
-  before_filter :find_discussion, only: [:discussion]
+  before_filter :find_discussion, only: [:discussion, :create]
 
   def discussion
     @member = DiscussionMember.find_by_discussion_id_and_user_id(@discussion.id, current_user.id )
@@ -19,14 +19,16 @@ class ChatsController < ApplicationController
 
   def create
     @chat = Chat.new(chat_params)
-    @channel = params[:channel]
+    @channel = params[:id]
+    @discussion = Discussion.find_by_slug(params[:id])
     user = User.find_by_email(params[:login])
     @msg = 0
     if user and user == current_user
       @chat.user_id = current_user.id
       @chat.channel_id = 1
+      @chat.discussion_id = @discussion.id
       @chat.save
-      PrivatePub.publish_to("/chats/#{params[:channel]}", "#{@chat.message}")
+      PrivatePub.publish_to("/chats/#{@channel}", "#{@chat.message}")
       @msg = 1
     end
     # respond_to do |format|

@@ -5,7 +5,7 @@
       <div class="userBubble clearfix"> 
         <i class="fa fa-caret-left fa-4x white"></i>
         <div class="col-lg-12 col-md-12 paddingReset">
-            <img class="media-object media-object-right img-circle" src="http://api.randomuser.me/portraits/med/women/64.jpg" alt="user pic">
+            <img class="media-object media-object-right img-circle hidden-xs hidden-sm" src="http://api.randomuser.me/portraits/med/women/64.jpg" alt="user pic">
             <div>
               <a href="#"> <h4 style="margin-bottom:5px; display:inline-block;"> <span> <strong> <%= chat.user.email %> </strong> </span> </h4></a>
               <a style="text-decoration:none;" href="#"> <span class="text-muted small"> • <%= time_ago_in_words(chat.created_at).capitalize %> Ago </span> </a>
@@ -24,7 +24,7 @@
       <div class="userBubble clearfix"> 
         <i class="fa fa-caret-left fa-4x white"></i>
         <div class="col-lg-12 col-md-12 paddingReset">
-            <img class="media-object media-object-left img-circle" src="<%= asset_path('7.jpg') %>" alt="user pic">
+            <img class="media-object media-object-left img-circle hidden-xs hidden-sm" src="<%= asset_path('7.jpg') %>" alt="user pic">
             <div>
               <a href="#"> <h4 style="margin-bottom:5px; display:inline-block;"> <span> <strong> <%= chat.user.email %> </strong> </span> </h4></a>
               <a style="text-decoration:none;" href="#"> <span class="text-muted small"> • <%= time_ago_in_words(chat.created_at).capitalize %> Ago </span> </a>

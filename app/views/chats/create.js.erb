@@ -1,8 +1,12 @@
 
 <%# if @msg == 1 %>
-	<% publish_to "/chats/#{ @channel } %>" do %>
+    PrivatePub.subscribe("/chats/<%= @discussion.slug %>", function(data, channel) {
+      $(".discBox").append(data.message);
+    });
+
+	<% publish_to "/chats/#{ @channel }" do %>
 		$('#message_box').val('');
 		$('.discBox .userPost').removeClass('new');
-		$('.discBox').append("<%=escape_javascript(render :partial => '/chats/user_message', :locals=>{:chat => @chat}, :object=> current_user) %>").find('.userPost:last').addClass('new');
+		$('.discBox').append("<%= j render :partial => '/chats/user_message', :locals=>{:chat => @chat}, :object=> current_user %>").find('.userPost:last').addClass('new');
 	<% end %>
 <%# end %>

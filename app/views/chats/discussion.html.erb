@@ -15,8 +15,8 @@
       </div> -->
       <% if @member %>
         <div class="discBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
-       	<% if @chat %>
-  	      	<% @chat.each do |chat| %>
+       	<% if @chats %>
+  	      	<% @chats.each do |chat| %>
   	      		<%= render partial: 'user_message', locals: {:chat => chat } %>
   	      	<% end %>
         	<% end %> 	
@@ -26,7 +26,7 @@
         <div class="messageBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
         	<%= form_tag "/chats",:method=> 'post', remote: true do %>
         		<%= hidden_field_tag 'login',current_user.email %>
-            <%= hidden_field_tag 'channel', @discussion.slug %>
+            <%= hidden_field_tag 'id', @discussion.slug %>
         		<div class="form-group">
   	      		<textarea class="form-control" value="" id="message_box" name="chat[message]" ></textarea>
               <p class="help-block">(Press <kbd>ENTER</kbd> to comment)</p>
@@ -88,9 +88,6 @@ border-radius: 3px;
       }
     });
 
-    PrivatePub.subscribe("/chats/<%= @discussion.slug %>", function(data, channel) {
-      $(".discBox").append(data.message);
-    });
 
   });
 </script>

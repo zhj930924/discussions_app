@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
   
 
+
+
   devise_for :users
 
-  root to: "chats#index"
+  root to: "discussions#index"
 
-  resources :chats
+  resources :discussions
+  resources :chats do
+
+  end
+  get 'chats/:id/discussion' => 'chats#discussion', as: :discussion_on
+  post 'discussions/:id/join_discussion'=> 'discussions#join_discussion', as: :join_discussion
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

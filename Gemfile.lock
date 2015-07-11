@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/acumenbrands/acts_as_slugable.git
+  revision: 51c739b8dc283483e8cb68be2f48f0742dadbf3d
+  specs:
+    acts_as_slugable (1.0)
+      activerecord (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -167,6 +174,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_slugable!
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 2.0)

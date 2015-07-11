@@ -26,6 +26,10 @@ Rails.application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  config.assets.initialize_on_precompile = true
+  config.assets.precompile = ['*.js', '*.css','*.scss','*.ttf','*.eot','*.svg','*.woff']
+  config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
 
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.

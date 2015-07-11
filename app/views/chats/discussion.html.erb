@@ -1,0 +1,96 @@
+
+<div class="col-lg-3 col-md-10 col-sm-12 col-xs-12 margin-top-md">
+  
+</div>
+
+<div class="col-lg-8 col-md-11 col-sm-12 col-xs-12 margin-top-md" style="margin-top: -36px;">
+    <div class="h4 raleway"><%= @discussion.title %></div>
+    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 paddingReset commentContainer"> 
+<!--       <div class="commentWrapper disc-about">
+        <div class="media roboto">
+          <div class="media-body text-center">
+            Demo Discussion
+          </div>
+        </div>
+      </div> -->
+      <% if @member %>
+        <div class="discBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
+       	<% if @chat %>
+  	      	<% @chat.each do |chat| %>
+  	      		<%= render partial: 'user_message', locals: {:chat => chat } %>
+  	      	<% end %>
+        	<% end %> 	
+        </div>
+
+
+        <div class="messageBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
+        	<%= form_tag "/chats",:method=> 'post', remote: true do %>
+        		<%= hidden_field_tag 'login',current_user.email %>
+            <%= hidden_field_tag 'channel', @discussion.slug %>
+        		<div class="form-group">
+  	      		<textarea class="form-control" value="" id="message_box" name="chat[message]" ></textarea>
+              <p class="help-block">(Press <kbd>ENTER</kbd> to comment)</p>
+        		</div>
+        		<!-- <button class="btn btn-sm btn-info">Submit</button> -->
+        	<% end %>
+        </div>
+      <% else %>
+        <div class="well h5"> You have not joined the discussion yet.
+          Please enter the secret key and click on 'JOIN' button.
+          <%= form_tag join_discussion_path(@discussion) do %>
+            <div class="form-group margin-top-md">
+              <label for="discussion_secret_key">Secret Key :</label> 
+              <input id="discussion_secret_key" name="discussion[secret_key]" value="" placeholder="Please enter the secret key.." required class="form-control" />
+            </div>
+            <div class="form-group">
+              <%= submit_tag 'JOIN', class: 'btn btn-info btn-sm' %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+</div>
+
+<%= subscribe_to "/chats/#{@discussion.slug}" %>
+<style type="text/css">
+.discBox {
+    border: 1px solid #666;
+    height: 400px;
+    margin-bottom: 10px;
+    overflow: auto;
+    background-color: #eee;
+}
+.message{
+	margin-bottom: 10px;
+}
+.new > div{
+	border-top: 1px solid dodgerblue;
+    margin-top: 14px;
+}
+.paddingReset{
+  padding-right: 0;
+  padding-left: 0;
+}
+.messageBox{
+background: rgba(255,255,255,0.7);
+padding: 4px 11px;
+border-radius: 3px;
+}
+</style>
+<script>
+  $(document).ready(function(){
+    $('#message_box').on('keydown', function(e){
+      var key_pressed = e.which;
+      if(key_pressed === 13 ){
+        if($(this).val()!== ""){
+          $('.messageBox form button').trigger('click');
+        }
+      }
+    });
+
+    PrivatePub.subscribe("/chats/<%= @discussion.slug %>", function(data, channel) {
+      $(".discBox").append(data.message);
+    });
+
+  });
+</script>

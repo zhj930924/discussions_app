@@ -1,0 +1,40 @@
+
+<div class="col-lg-3 col-md-10 col-sm-12 col-xs-12 margin-top-md">
+</div>
+
+<div class="col-lg-8 col-md-11 col-sm-12 col-xs-12 margin-top-md" style="margin-top: -36px;">
+  <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 ccpPost"> 
+  <%= link_to 'New Discussion', new_discussion_path(), class: 'btn btn-success btn-md' %>
+  <table class="table table-hover table-bordered margin-top-md">
+    <thead>
+      <tr>
+        <th>S.No.</th>
+        <th>Topic</th>
+        <th>No. of Users</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% if @discussions %>
+      <% @discussions.each_with_index do |discussion, index| %>
+        <tr>
+          <td><%= (index+1) %></td>
+          <td><%= link_to discussion.title, discussion_on_path(discussion) %></td>
+          <td><%= discussion.chats.count %></td>
+          <td> 
+          		<%= link_to '<i class="fa fa-pencil"></i>'.html_safe,edit_discussion_path(discussion), class: 'btn btn-xs' %> 
+          		<%= link_to '<i class="fa fa-trash-o"></i>'.html_safe,discussion_path(discussion), class: 'btn btn-xs', method: :delete, confirm: 'Are you sure?' %>
+          </td>
+        </tr>
+      <% end %>  
+    <% else %>
+        <tr>
+          <td colspan="4" class="text-center">No Discussions yet</td>
+        </tr>
+    <% end %>    
+    </tbody>
+
+  </table>
+    
+  </div>
+</div>    

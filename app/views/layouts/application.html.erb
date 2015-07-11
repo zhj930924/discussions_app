@@ -75,5 +75,22 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
  <%= render partial: 'shared/ga' %>
+ 
+ <script type="text/javascript">
+ <% if flash[:notice] %>
+    notification('<%= flash[:notice] %>','success');
+ <% elsif flash[:error] %>
+    notification('<%= flash[:error] %>','danger');
+ <% end %>
+   function notification(msg,type){
+    var alert = $('<div class="alert notification-alert '+type+'-notification"></div>');
+    $('body').append(alert);
+    alert.html(msg);
+    setTimeout(function(){
+      $('.notification-alert').fadeOut().remove();
+    },3000);
+  }
+ </script>
+
 </body>
 </html>

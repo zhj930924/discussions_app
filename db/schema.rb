@@ -11,12 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150616071334) do
+ActiveRecord::Schema.define(version: 20150711073353) do
 
   create_table "chats", force: true do |t|
     t.text     "message"
     t.integer  "user_id"
     t.integer  "channel_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "discussion_id"
+  end
+
+  add_index "chats", ["discussion_id"], name: "index_chats_on_discussion_id", using: :btree
+
+  create_table "discussion_members", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "discussion_id"
+    t.string   "access"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "discussions", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "secret_key"
+    t.integer  "user_id"
+    t.integer  "published",   default: 0
+    t.text     "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

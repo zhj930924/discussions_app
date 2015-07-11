@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'thin'
 gem 'private_pub'
 gem 'devise'
+gem 'acts_as_slugable',:git=>'git://github.com/acumenbrands/acts_as_slugable.git'
 
 group :development do
 	gem 'mysql2'

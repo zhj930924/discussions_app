@@ -4,15 +4,9 @@
 </div>
 
 <div class="col-lg-8 col-md-11 col-sm-12 col-xs-12 margin-top-md" style="margin-top: -36px;">
-    <div class="h4 raleway"><%= @discussion.title %></div>
+    <div class="h4 raleway"><a class="text-muted" href="/">HOME</a> >> <%= @discussion.title %></div>
     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 paddingReset commentContainer"> 
-<!--       <div class="commentWrapper disc-about">
-        <div class="media roboto">
-          <div class="media-body text-center">
-            Demo Discussion
-          </div>
-        </div>
-      </div> -->
+
       <% if @member %>
         <div class="discBox col-lg-10 col-md-10 col-sm-10 col-xs-12 paddingReset">
        	<% if @chats %>

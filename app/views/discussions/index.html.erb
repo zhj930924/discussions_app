@@ -20,7 +20,7 @@
         <tr>
           <td><%= (index+1) %></td>
           <td><%= link_to discussion.title, discussion_on_path(discussion) %></td>
-          <td><%= discussion.chats.count %></td>
+          <td class="text-center"><%= discussion.discussion_members.count %></td>
           <td> 
           		<%= link_to '<i class="fa fa-pencil"></i>'.html_safe,edit_discussion_path(discussion), class: 'btn btn-xs' %> 
           		<%= link_to '<i class="fa fa-trash-o"></i>'.html_safe,discussion_path(discussion), class: 'btn btn-xs', method: :delete, confirm: 'Are you sure?' %>

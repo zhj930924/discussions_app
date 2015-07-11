@@ -1,6 +1,7 @@
 class DiscussionsController < ApplicationController
 
 before_filter :find_discussion
+before_filter :check_owner, only: [:destroy, :update, :edit]
 
   def index
   	@discussions = Discussion.all
@@ -28,7 +29,9 @@ before_filter :find_discussion
   end
 
   def update
-
+	  @discussion.update_attributes(discussion_params)
+    flash[:notice] = "Discussion updated successfully"
+    redirect_to discussion_on_path(id: @discussion.slug )
   end
 
   def join_discussion
@@ -52,14 +55,9 @@ before_filter :find_discussion
   end
 
   def destroy
-  	if current_user.id == @discussion.user_id or current_user.email = "sahilprjpt206@gmail.com"
   		@discussion.destroy
   		flash[:notice] = "Discussion has been successfully removed."
   		redirect_to discussions_path
-  	else
-  		flash[:error] = "Access Denied"
-  		redirect_to discussions_path	
-  	end
   end
 
   def show
@@ -75,4 +73,14 @@ before_filter :find_discussion
   def find_discussion
   	@discussion = Discussion.find_by_slug(params[:id]) or raise(ActiveRecord::RecordNotFound) if params[:id]
   end
+
+  def check_owner
+  	if current_user.id == @discussion.user_id or current_user.email = "sahilprjpt206@gmail.com"
+  		return true
+  	else
+  		flash[:error] = "Access Denied"
+  		redirect_to discussions_path
+  	end	
+  end
+
 end

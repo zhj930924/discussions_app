@@ -18,6 +18,10 @@ before_filter :find_discussion
   	@discussion = Discussion.new(discussion_params)
   	@discussion.user_id = current_user.id
   	if @discussion.save
+  		@discussion_member = DiscussionMember.new
+		@discussion_member.user_id = current_user.id
+		@discussion_member.discussion_id = @discussion.id
+		@discussion_member.save
   		flash[:notice] = "Discussion created successfully"
   		redirect_to discussion_on_path(id: @discussion.slug )
   	end
@@ -48,12 +52,13 @@ before_filter :find_discussion
   end
 
   def destroy
-  	if current_user.id == @discussion.user_id or current_user.login = "sahilprjpt206@gmail.com"
+  	if current_user.id == @discussion.user_id or current_user.email = "sahilprjpt206@gmail.com"
   		@discussion.destroy
   		flash[:notice] = "Discussion has been successfully removed."
   		redirect_to discussions_path
   	else
-  			
+  		flash[:error] = "Access Denied"
+  		redirect_to discussions_path	
   	end
   end
 

@@ -1,6 +1,6 @@
 
 <%# if @msg == 1 %>
-	<% publish_to "/chats/<%= @channel %>" do %>
+	<% publish_to "/chats/#{ @channel } %>" do %>
 		$('#message_box').val('');
 		$('.discBox .userPost').removeClass('new');
 		$('.discBox').append("<%=escape_javascript(render :partial => '/chats/user_message', :locals=>{:chat => @chat}, :object=> current_user) %>").find('.userPost:last').addClass('new');
